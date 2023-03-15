@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app-root/app.component';
+import { TimerComponent } from './cmp/timer/timer.component';
+import { MousePosComponent } from './cmp/mouse-pos/mouse-pos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimerComponent,
+    MousePosComponent
   ],
   imports: [
     BrowserModule,
