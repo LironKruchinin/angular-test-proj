@@ -6,13 +6,15 @@ import { AppComponent } from './app-root/app.component';
 import { TimerComponent } from './cmp/timer/timer.component';
 import { MousePosComponent } from './cmp/mouse-pos/mouse-pos.component';
 import { HomeComponent } from './cmp/home/home.component';
+import { WatchersComponent } from './cmp/watchers/watchers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimerComponent,
     MousePosComponent,
-    HomeComponent
+    HomeComponent,
+    WatchersComponent
   ],
   imports: [
     BrowserModule,
