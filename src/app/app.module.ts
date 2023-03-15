@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app-root/app.component';
 import { TimerComponent } from './cmp/timer/timer.component';
 import { MousePosComponent } from './cmp/mouse-pos/mouse-pos.component';
+import { HomeComponent } from './cmp/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimerComponent,
-    MousePosComponent
+    MousePosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
