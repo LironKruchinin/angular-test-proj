@@ -1,1 +1,5 @@
-<p>watchers works!</p>
+<div class="watchers">
+   <div *ngFor="let watcher of watchers" class="watcher">
+      <watcher [watcher]="watcher"></watcher>
+   </div>
+</div>

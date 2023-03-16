@@ -7,6 +7,7 @@ import { TimerComponent } from './cmp/timer/timer.component';
 import { MousePosComponent } from './cmp/mouse-pos/mouse-pos.component';
 import { HomeComponent } from './cmp/home/home.component';
 import { WatchersComponent } from './cmp/watchers/watchers.component';
+import { WatcherComponent } from './cmp/watchers/watcher/watcher.component';
 
 @NgModule({
    declarations: [
@@ -14,7 +15,8 @@ import { WatchersComponent } from './cmp/watchers/watchers.component';
       TimerComponent,
       MousePosComponent,
       HomeComponent,
-      WatchersComponent
+      WatchersComponent,
+      WatcherComponent
    ],
    imports: [
       BrowserModule,

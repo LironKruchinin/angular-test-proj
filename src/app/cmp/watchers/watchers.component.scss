@@ -1,0 +1,12 @@
+@import "../../../assets/styles/main.scss";
+
+:host {
+
+   .watchers {
+      background-color: $clr3;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 40px;
+      height: em(500px);
+   }
+}
