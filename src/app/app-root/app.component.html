@@ -1,5 +1,8 @@
 <section class="main-app">
    <nav>
+      <div class="app-name">
+         <h1><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Angular testing ground</a></h1>
+      </div>
       <ul>
          <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
          <li><a routerLink="/timer" routerLinkActive="active" ariaCurrentWhenActive="page">Timer</a></li>
@@ -9,4 +12,6 @@
    </nav>
 </section>
 
-<router-outlet></router-outlet>
+<div class="content">
+   <router-outlet></router-outlet>
+</div>

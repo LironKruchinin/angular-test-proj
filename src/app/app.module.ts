@@ -9,18 +9,18 @@ import { HomeComponent } from './cmp/home/home.component';
 import { WatchersComponent } from './cmp/watchers/watchers.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TimerComponent,
-    MousePosComponent,
-    HomeComponent,
-    WatchersComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      TimerComponent,
+      MousePosComponent,
+      HomeComponent,
+      WatchersComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule
+   ],
+   providers: [],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }

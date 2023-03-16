@@ -1,10 +1,39 @@
+@import "../../assets/styles/main.scss";
+
+
 :host {
+
    nav {
+      display: flex;
+      margin: 0 10rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      justify-content: space-between;
+
+      h1 {
+         a {
+            color: $clr1;
+            font-size: em(20px);
+
+            &:hover {
+               color: $clr2;
+            }
+         }
+      }
+
+      .app-name {
+         margin: rem(10px) 0;
+      }
 
       ul {
          display: flex;
          list-style: none;
-         gap: 10px;
+         gap: rem(10px);
+         margin: rem(10px) 0;
+         align-items: center;
       }
+   }
+
+   .content {
+      margin: 0 10rem;
    }
 }
