@@ -1,5 +1,11 @@
 <div class="watchers">
    <div *ngFor="let watcher of watchers" class="watcher">
-      <watcher [watcher]="watcher"></watcher>
+      <watcher [watcher]="watcher" (click)="openModal(watcher)"></watcher>
    </div>
 </div>
+
+<section *ngIf="(watcher | json) !== ({} | json)" class="modal">
+   <button (click)="closeModal()">close Modal</button>
+
+   <modal [currWatcher]="watcher"></modal>
+</section>

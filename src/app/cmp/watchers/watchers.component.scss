@@ -9,4 +9,13 @@
       grid-gap: 40px;
       height: em(500px);
    }
+
+   .modal {
+      background-color: $clr5-dark;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -250px;
+   }
 }

@@ -1,5 +1,5 @@
-import { Input } from '@angular/core';
-import { Component } from '@angular/core';
+import { } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
    selector: 'watcher',
