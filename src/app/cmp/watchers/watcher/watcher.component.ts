@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { watcher } from '../types';
+
 @Component({
    selector: 'watcher',
    templateUrl: './watcher.component.html',
