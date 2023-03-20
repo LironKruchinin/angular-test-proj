@@ -1,7 +1,15 @@
 :host {
 
+   display: flex;
+
+   img {
+      height: 200px;
+      width: 200px;
+   }
+
+   cursor: pointer;
+
    .watcher-details {
-      background-color: rgb(112, 112, 109);
       // margin: 5px;
       height: 100%;
 

@@ -5,7 +5,6 @@
 </div>
 
 <section *ngIf="(watcher | json) !== ({} | json)" class="modal">
-   <button (click)="closeModal()">close Modal</button>
-
+   <button (click)="closeModal()">x</button>
    <modal [currWatcher]="watcher"></modal>
 </section>

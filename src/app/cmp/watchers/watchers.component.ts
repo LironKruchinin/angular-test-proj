@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
 import watcherList from '../../../service/watchers.json'
+import { watcher } from './types'
 
 @Component({
    selector: 'watchers',
@@ -8,7 +10,7 @@ import watcherList from '../../../service/watchers.json'
 })
 
 export class WatchersComponent {
-   watchers: Array<Object> = []
+   watchers: watcher[]
    isOpenModal = false
    watcher = {}
 
@@ -19,8 +21,6 @@ export class WatchersComponent {
    openModal(currWatcher: Object) {
       this.isOpenModal = !this.isOpenModal
       this.watcher = currWatcher
-      console.log('open modal', this.isOpenModal)
-      console.log('who is watching', this.watcher)
    }
 
    closeModal() {

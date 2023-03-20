@@ -1,1 +1,5 @@
-{{currWatcher.name}}
+<p>Name: {{currWatcher.name}}</p>
+<p>Email: {{currWatcher.email}}</p>
+<div *ngFor="let movie of currWatcher.movies" class="movies">
+   <p>{{movie.title}}</p>
+</div>

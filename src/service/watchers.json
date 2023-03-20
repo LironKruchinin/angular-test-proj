@@ -2,7 +2,7 @@
    {
       "name": "John",
       "email": "john@example.com",
-      "movies_watched": [
+      "movies": [
          {
             "title": "The Shawshank Redemption",
             "year": 1994,
@@ -18,7 +18,7 @@
    {
       "name": "Sarah",
       "email": "sarah@example.com",
-      "movies_watched": [
+      "movies": [
          {
             "title": "The Dark Knight",
             "year": 2008,
@@ -34,7 +34,7 @@
    {
       "name": "David",
       "email": "david@example.com",
-      "movies_watched": [
+      "movies": [
          {
             "title": "Forrest Gump",
             "year": 1994,
@@ -50,7 +50,7 @@
    {
       "name": "Emma",
       "email": "emma@example.com",
-      "movies_watched": [
+      "movies": [
          {
             "title": "Pulp Fiction",
             "year": 1994,
@@ -66,7 +66,7 @@
    {
       "name": "Michael",
       "email": "michael@example.com",
-      "movies_watched": [
+      "movies": [
          {
             "title": "The Lord of the Rings: The Fellowship of the Ring",
             "year": 2001,
@@ -82,7 +82,7 @@
    {
       "name": "Emily",
       "email": "emily@example.com",
-      "movies_watched": [
+      "movies": [
          {
             "title": "The Lord of the Rings: The Two Towers",
             "year": 2002,
@@ -98,7 +98,7 @@
    {
       "name": "Jacob",
       "email": "jacob@example.com",
-      "movies_watched": [
+      "movies": [
          {
             "title": "Goodfellas",
             "year": 1990,
@@ -114,7 +114,7 @@
    {
       "name": "Olivia",
       "email": "olivia@example.com",
-      "movies_watched": [
+      "movies": [
          {
             "title": "Schindler's List",
             "year": 1993,

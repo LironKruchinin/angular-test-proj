@@ -3,19 +3,32 @@
 :host {
 
    .watchers {
-      background-color: $clr3;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 40px;
       height: em(500px);
+
+      .watcher {
+         background-color: rgb(112, 112, 109);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
    }
 
    .modal {
       background-color: $clr5-dark;
       position: fixed;
+      min-height: 300px;
+      min-width: 300px;
       top: 50%;
       left: 50%;
-      margin-top: -100px;
-      margin-left: -250px;
+      margin-top: -300px;
+      margin-left: -150px;
+
+      button {
+         cursor: pointer;
+         margin: 10px 0 0 10px;
+      }
    }
 }

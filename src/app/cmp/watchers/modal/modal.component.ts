@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ModalComponent {
 
-   @Input() currWatcher: any | undefined
+   @Input() currWatcher: { name?: string, email?: string, movies?: { title: string, year?: number, rating?: number }[] }
 
    closeModal() {
       this.currWatcher = {}
