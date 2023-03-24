@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { MovieService } from '../../../../service/movie/movie.service'
-import { watcher } from '../types';
+import { watcher, movie } from '../types'
 
 @Component({
    selector: 'watcher',
@@ -8,11 +8,14 @@ import { watcher } from '../types';
    styleUrls: ['./watcher.component.scss']
 })
 export class WatcherComponent {
-   constructor(private MovieService: MovieService) { }
    @Input() watcher: watcher
+   @Output() userMovies: EventEmitter<movie[]> = new EventEmitter<movie[]>()
 
+   constructor(private MovieService: MovieService) { }
 
-   ngOnInit() {
-      console.log(this.MovieService.getHelloWorld());
+   async ngOnInit() {
+      const movies: any = await this.MovieService.getMoviePosters(this.watcher)
+      this.userMovies.emit(movies)
    }
+
 }

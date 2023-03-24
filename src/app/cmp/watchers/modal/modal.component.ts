@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-
+import { currWatcher } from '../types'
 @Component({
    selector: 'modal',
    templateUrl: './modal.component.html',
@@ -7,7 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class ModalComponent {
 
-   @Input() currWatcher: { name?: string, email?: string, movies?: { title: string, year?: number, rating?: number }[] }
+   @Input() currWatcher: currWatcher
+   @Input() userMovies: any
+
+   ngOnInit() {
+      console.log(this.userMovies)
+   }
 
    closeModal() {
       this.currWatcher = {}
