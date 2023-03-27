@@ -1,5 +1,20 @@
 :host {
-   p {
-      margin-left: 10px;
+   .curr-watcher {
+      display: flex;
+      flex-direction: column;
+
+      p {
+         margin-left: 10px;
+      }
+
+      .movies {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+      }
+
+      .movie-data {
+         display: flex;
+      }
    }
 }

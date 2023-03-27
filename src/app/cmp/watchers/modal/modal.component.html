@@ -1,8 +1,19 @@
-<p>Name: {{currWatcher.name}}</p>
-<p>Email: {{currWatcher.email}}</p>
-<div *ngFor="let movie of currWatcher.movies" class="movies">
-   <p>{{movie.title}}</p>
-   <div *ngFor="let poster of userMovies">
-      <img src="{{poster.poster}}" alt="">
+<section class="curr-watcher">
+
+   <div class="watcher-info">
+      <p>Name: {{currWatcher.name}}</p>
+      <p>Email: {{currWatcher.email}}</p>
    </div>
-</div>
+
+   <div class="movie-data">
+
+      <div *ngFor="let movie of movieData" class="movies">
+         <p>{{movie.title}}</p>
+         <div class="image-container">
+            <img src="{{movie.poster}}" alt="poster of {{movie.title}} ">
+         </div>
+      </div>
+
+   </div>
+
+</section>

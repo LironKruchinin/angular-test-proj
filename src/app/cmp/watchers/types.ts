@@ -10,6 +10,11 @@ export interface currWatcher {
    movies?: { title: string, year?: number, rating?: number }[]
 }
 
+export interface movieWatcher {
+   title: string,
+   poster: string
+}
+
 export interface movie {
    Title: string,
    Year: number,
