@@ -2,5 +2,7 @@
 <p>Email: {{currWatcher.email}}</p>
 <div *ngFor="let movie of currWatcher.movies" class="movies">
    <p>{{movie.title}}</p>
-   <p>{{userMovies |json}}</p>
+   <div *ngFor="let poster of userMovies">
+      <img src="{{poster.poster}}" alt="">
+   </div>
 </div>
